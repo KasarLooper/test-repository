@@ -11,14 +11,14 @@ public class MainMenuScreen extends ScreenAdapter {
     private MyGdxGame game;
     private OrthographicCamera camera;
     private SpriteBatch batch;
-    private Texture texture;
+    //private Texture texture;
 
     public MainMenuScreen(MyGdxGame game) {
         this.game = game;
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 800, 480); // Set the camera to the desired dimensions
         batch = new SpriteBatch();
-        texture = new Texture("restart_bg.png");
+        //texture = new Texture("restart_bg.png");
     }
 
     @Override
@@ -28,7 +28,7 @@ public class MainMenuScreen extends ScreenAdapter {
 
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
-        batch.draw(texture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        //batch.draw(texture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         batch.end();
     }
 
